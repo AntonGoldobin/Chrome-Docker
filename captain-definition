@@ -1,5 +1,10 @@
 {
- "schemaVersion" :2 ,
- "dockerfilePath": "./docker-compose"
+ 	"schemaVersion" :2 ,
+	"dockerfileLines": [
+                        "FROM node:12-alpine",
+                        "RUN mkdir -p /usr/src/app",
+                        "COPY . /usr/src/app",
+                        "CMD [ \"docker\", \"compose\", \"up\" ]"
+                    ]
 }
 
