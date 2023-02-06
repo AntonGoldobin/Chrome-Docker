@@ -4,8 +4,8 @@
                         "FROM node:12-alpine",
                         "RUN mkdir -p /usr/src/app",
                         "COPY . /usr/src/app",
-												"RUN docker compose down"
-												"RUN docker compose build"
+												"RUN docker compose down",
+												"RUN docker compose build",
 												"RUN docker compose up"
                     ]
 }
